@@ -1,0 +1,37 @@
+<%= form_for(@godzilla) do |f| %>
+  <% if @godzilla.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@godzilla.errors.count, "error") %> prohibited this godzilla from being saved:</h2>
+
+      <ul>
+      <% @godzilla.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :teeth %><br />
+    <%= f.number_field :teeth %>
+  </div>
+  <div class="field">
+    <%= f.label :breath_temperature %><br />
+    <%= f.text_field :breath_temperature %>
+  </div>
+  <div class="field">
+    <%= f.label :eyes %><br />
+    <%= f.text_field :eyes %>
+  </div>
+  <div class="field">
+    <%= f.label :life_story %><br />
+    <%= f.text_area :life_story %>
+  </div>
+  <div class="field">
+    <%= f.label :arch_rival %><br />
+    <%= f.text_field :arch_rival %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

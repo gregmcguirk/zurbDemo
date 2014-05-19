@@ -1,0 +1,31 @@
+<h1>Listing godzillas</h1>
+
+<table>
+  <tr>
+    <th>Teeth</th>
+    <th>Breath temperature</th>
+    <th>Eyes</th>
+    <th>Life story</th>
+    <th>Arch rival</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @godzillas.each do |godzilla| %>
+  <tr>
+    <td><%= godzilla.teeth %></td>
+    <td><%= godzilla.breath_temperature %></td>
+    <td><%= godzilla.eyes %></td>
+    <td><%= godzilla.life_story %></td>
+    <td><%= godzilla.arch_rival %></td>
+    <td><%= link_to 'Show', godzilla %></td>
+    <td><%= link_to 'Edit', edit_godzilla_path(godzilla) %></td>
+    <td><%= link_to 'Destroy', godzilla, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Godzilla', new_godzilla_path %>
