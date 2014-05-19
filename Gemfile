@@ -36,3 +36,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'zurb-foundation'
+gem 'font-awesome-rails'
+gem 'rspec-rails'
