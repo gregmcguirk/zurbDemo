@@ -1,4 +1,7 @@
 ZurbDemo::Application.routes.draw do
+  resources :godzillas
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

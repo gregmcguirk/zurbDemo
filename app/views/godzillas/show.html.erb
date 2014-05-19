@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Teeth:</b>
+  <%= @godzilla.teeth %>
+</p>
+
+<p>
+  <b>Breath temperature:</b>
+  <%= @godzilla.breath_temperature %>
+</p>
+
+<p>
+  <b>Eyes:</b>
+  <%= @godzilla.eyes %>
+</p>
+
+<p>
+  <b>Life story:</b>
+  <%= @godzilla.life_story %>
+</p>
+
+<p>
+  <b>Arch rival:</b>
+  <%= @godzilla.arch_rival %>
+</p>
+
+
+<%= link_to 'Edit', edit_godzilla_path(@godzilla) %> |
+<%= link_to 'Back', godzillas_path %>
