@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
   <b class="label">Teeth:</b>
   <%= @godzilla.teeth %>
@@ -30,3 +31,23 @@
 
 <%= link_to 'Edit', edit_godzilla_path(@godzilla) %> |
 <%= link_to 'Back', godzillas_path %>
+<ul class="example-orbit" data-orbit>
+  <li>
+    <%= image_tag("andromeda-orbit.jpg", alt:"slide 1") %>
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <%= image_tag("satelite-orbit.jpg", alt:"slide 2") %>
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <%= image_tag("launch-orbit.jpg", alt:"slide 2") %>
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>

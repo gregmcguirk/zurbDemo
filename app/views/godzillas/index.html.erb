@@ -1,5 +1,5 @@
 <div class="panel radius">
-  <h1>Listing godzillas</h1>
+  <h1 data-tooltip class="has-tip" title="Who know there was more than one?">Listing godzillas</h1>
 </div>
 
 <table>
@@ -27,7 +27,17 @@
   </tr>
 <% end %>
 </table>
-
+<ul class="pagination">
+  <li class="arrow unavailable"><a href="">&laquo;</a></li>
+  <li class="current"><a href="">1</a></li>
+  <li><a href="">2</a></li>
+  <li><a href="">3</a></li>
+  <li><a href="">4</a></li>
+  <li class="unavailable"><a href="">&hellip;</a></li>
+  <li><a href="">12</a></li>
+  <li><a href="">13</a></li>
+  <li class="arrow"><a href="">&raquo;</a></li>
+</ul>
 <br />
 
-<%= link_to 'New Godzilla', new_godzilla_path , class: "button round"%>
+<%= link_to 'New Godzilla', new_godzilla_path , class: "button success "%>
