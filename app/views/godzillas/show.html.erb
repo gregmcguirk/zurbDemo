@@ -1,27 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Teeth:</b>
+  <b class="label">Teeth:</b>
   <%= @godzilla.teeth %>
 </p>
 
 <p>
-  <b>Breath temperature:</b>
+  <b class="label success">Breath temperature:</b>
   <%= @godzilla.breath_temperature %>
 </p>
 
 <p>
-  <b>Eyes:</b>
+  <b class="label alert">Eyes:</b>
   <%= @godzilla.eyes %>
 </p>
 
 <p>
-  <b>Life story:</b>
-  <%= @godzilla.life_story %>
+  <b class="label">Life story:</b>
+  <div class="panel">
+    <%= @godzilla.life_story %>
+  </div>
 </p>
 
 <p>
-  <b>Arch rival:</b>
+  <b class="label success">Arch rival:</b>
   <%= @godzilla.arch_rival %>
 </p>
 

@@ -12,26 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :teeth %><br />
-    <%= f.number_field :teeth %>
+    <label for="godzilla_teeth">Teeth
+      <%= f.number_field :teeth %>
+    </label>
   </div>
   <div class="field">
-    <%= f.label :breath_temperature %><br />
-    <%= f.text_field :breath_temperature %>
+    <label for="godzilla_breath_temperature">Breath Temperature in F
+      <%= f.text_field :breath_temperature %>
+    </label>
   </div>
   <div class="field">
-    <%= f.label :eyes %><br />
-    <%= f.text_field :eyes %>
+    <label for="godzilla_eyes">Eyes
+      <%= f.text_field :eyes %>
+    </label>
   </div>
   <div class="field">
-    <%= f.label :life_story %><br />
-    <%= f.text_area :life_story %>
+    <label for="godzilla_life_story">Life Story
+      <%= f.text_area :life_story %>
+    </label>
   </div>
   <div class="field">
-    <%= f.label :arch_rival %><br />
-    <%= f.text_field :arch_rival %>
+    <label for="godzilla_arch_rival">Arch Rival
+      <%= f.text_field :arch_rival %>
+    </label>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "submit", class: "button success" %>
   </div>
 <% end %>
+
